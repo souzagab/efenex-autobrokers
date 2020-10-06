@@ -7,7 +7,7 @@ namespace Efenex
 {
     class DbConection
     {
-        private static string connectionString = "Data Source=MSSQLLocalDB";
+        private static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Integrated Security=True";
         private static DbConection singleton;
         private static SqlConnection sqlConnection;
 
