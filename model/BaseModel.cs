@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Efenex.model
 {
-    class BaseModel
+    public class BaseModel
     {
         public Int64 Id { get; set; }
 
