@@ -1,25 +1,23 @@
-﻿using Efenex.model;
+﻿using Dapper;
+using Efenex.model;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Efenex
 {
-    public class Cliente:BaseModel
+    public class Cliente : BaseModel
     {
-        public string nome { get; set; }
-        public DateTime nascimento { get; set; }
-        public string cpf { get; set; }
-        public int idade { get; set; }
-        public string rg { get; set; }
+        public string Nome { get; set; }
+        public string DataNascimento { get; set; }
+        public string Cpf { get; set; }
+        public string Rg { get; set; }
 
-        public Cliente(string nome, DateTime nascimento, string cpf, int idade, string rg)
+        public bool Save()
         {
-            this.nome = nome;
-            this.nascimento = nascimento;
-            this.cpf = cpf;
-            this.idade = idade;
-            this.rg = rg;
+                var response = Connection.Execute(@$"INSERT INTO {TableName()}(Nome,Cpf,Rg,DataNascimento) VALUES(@Nome,@Cpf,@Rg,@DataNascimento)", this);
+                return response == 1;
         }
     }
 }
