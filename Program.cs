@@ -21,20 +21,10 @@ namespace Efenex
         [STAThread]
         static void Main()
         {
-            //Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-
-
-            var clientes = new ClientesController();
-
-
-
-            var cliente = new Cliente { Nome = "Atualiza porra", DataNascimento="22/10/2020",  Cpf="1231231231", Rg="12312312"};
-
-            Console.WriteLine(clientes.Update(1, cliente));
-           
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Main());
 
         }
     }

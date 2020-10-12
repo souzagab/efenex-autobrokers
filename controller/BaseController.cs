@@ -16,12 +16,12 @@ namespace Efenex.controller
             throw new NotImplementedException();
         }
 
-        public object Show(int id)
+        public object Show(long id)
         {
             throw new NotImplementedException();
         }
 
-        public bool Delete(int id)
+        public bool Delete(long id)
         {
             throw new NotImplementedException();
         }
@@ -31,7 +31,7 @@ namespace Efenex.controller
             throw new NotImplementedException();
         }
 
-        public bool Update(int id, object parametros)
+        public bool Update(long id, object parametros)
         {
             throw new NotImplementedException();
         }

@@ -30,13 +30,13 @@ namespace Efenex.controller
             Cliente cliente = new Cliente { Nome= parametros.Nome, Cpf= parametros.Cpf, Rg = parametros.Rg, DataNascimento= parametros.DataNascimento };
             return cliente.Save();
         }
-        public bool Update(int id, Cliente parametros)
+        public bool Update(long id, Cliente parametros)
         {
             Cliente cliente = new Cliente { Id= id, Nome = parametros.Nome, Cpf = parametros.Cpf, Rg = parametros.Rg, DataNascimento = parametros.DataNascimento };
             var query = Connection.Execute("UPDATE clientes SET Nome=@Nome, Cpf=@Cpf, Rg=@Rg, DataNascimento=@DataNascimento WHERE Id=@Id", cliente);
             return query == 1;
         }
-        public bool Delete(int id)
+        public bool Delete(long id)
         {
             Cliente cliente = new Cliente();
             return cliente.Destroy(id);

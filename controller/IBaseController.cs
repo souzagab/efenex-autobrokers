@@ -10,10 +10,10 @@ namespace Efenex.controller
         public List<Object> Index();
 
         public bool Create();
-        public Object Show(int id);
-        public bool Update(int id, Object parametros);
+        public Object Show(long id);
+        public bool Update(long id, Object parametros);
 
-        public bool Delete(int id);
+        public bool Delete(long id);
 
     }
 }

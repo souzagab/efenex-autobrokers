@@ -19,17 +19,17 @@ namespace Efenex.model
         {
             throw new NotImplementedException();
         }
-        public bool Update(int id, object parametros)
+        public bool Update(long id, object parametros)
         {
             throw new NotImplementedException();
         }
 
-        public Object Find(int id)
+        public Object Find(long id)
         {
             return Connection.QueryFirst($"SELECT * FROM { TableName() } WHERE Id=@Id", new { Id = id });
         }
 
-        public bool Destroy(int id)
+        public bool Destroy(long id)
         {
             string query = $"DELETE FROM { TableName() } WHERE Id=@Id";
             var con = Connection.Execute(query, new { Id=id});

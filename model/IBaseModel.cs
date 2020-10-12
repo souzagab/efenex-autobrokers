@@ -11,9 +11,9 @@ namespace Efenex
     interface IBaseModel
     {
         bool Save(Object model);
-        Object Find(int id);
+        Object Find(long id);
 
-        bool Update(int id, Object parametros);
-        bool Destroy(int id);
+        bool Update(long id, Object parametros);
+        bool Destroy(long id);
     }
 }
