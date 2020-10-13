@@ -7,7 +7,7 @@ namespace Efenex
 {
     public abstract class VeiculoSuv : Veiculo
     {
-        public VeiculoSuv(string marca, string modelo, DateTime ano, string versao, string placa, double valor)
+        public VeiculoSuv(string marca, string modelo, int ano, string versao, string placa, double valor)
         {
             this.marca = marca;
             this.modelo = modelo;

@@ -93,6 +93,7 @@
             this.txtBoxDataNascimento.Name = "txtBoxDataNascimento";
             this.txtBoxDataNascimento.Size = new System.Drawing.Size(200, 23);
             this.txtBoxDataNascimento.TabIndex = 7;
+            this.txtBoxDataNascimento.ValueChanged += new System.EventHandler(this.txtBoxDataNascimento_ValueChanged);
             // 
             // labelDataNascimento
             // 
@@ -113,7 +114,7 @@
             this.btnSaveCliente.UseVisualStyleBackColor = true;
             this.btnSaveCliente.Click += new System.EventHandler(this.btnSaveCliente_Click);
             // 
-            // NovoCliente
+            // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -127,7 +128,7 @@
             this.Controls.Add(this.txtBoxCpf);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.txtBoxNome);
-            this.Name = "NovoCliente";
+            this.Name = "FormCliente";
             this.Text = "Cadastro - Novo Cliente";
             this.ResumeLayout(false);
             this.PerformLayout();

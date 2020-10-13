@@ -7,7 +7,7 @@ namespace Efenex
 {
     public abstract class VeiculoHatch :Veiculo
     {
-        public VeiculoHatch(string marca, string modelo, DateTime ano, string versao, string placa, double valor)
+        public VeiculoHatch(string marca, string modelo, int ano, string versao, string placa, double valor)
         {
             this.marca = marca;
             this.modelo = modelo;
