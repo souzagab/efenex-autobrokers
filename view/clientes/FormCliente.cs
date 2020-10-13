@@ -12,7 +12,7 @@ namespace Efenex.view.clientes
     public partial class FormCliente : Form
     {
         private Cliente cliente;
-
+        private ClientesController clientesController = new ClientesController();
         public FormCliente(Cliente cliente = null)
         {
             InitializeComponent();
@@ -34,9 +34,9 @@ namespace Efenex.view.clientes
                 cliente.Nome = txtBoxNome.Text;
                 cliente.Cpf = txtBoxCpf.Text;
                 cliente.Rg = txtBoxRg.Text;
-                cliente.DataNascimento = txtBoxDataNascimento.ToString();
+                cliente.DataNascimento = txtBoxDataNascimento.Value.ToString();
 
-                if (new ClientesController().Create(cliente))
+                if (clientesController.Create(cliente))
                 {
                     MessageBox.Show("Cliente cadastrado com sucesso!");
                 }
@@ -50,9 +50,9 @@ namespace Efenex.view.clientes
                 cliente.Nome = txtBoxNome.Text;
                 cliente.Cpf = txtBoxCpf.Text;
                 cliente.Rg = txtBoxRg.Text;
-                cliente.DataNascimento = txtBoxDataNascimento.ToString();
+                cliente.DataNascimento = txtBoxDataNascimento.Value.ToString();
 
-                if (new ClientesController().Update(cliente.Id,cliente))
+                if (clientesController.Update(cliente.Id,cliente))
                 {
                     MessageBox.Show("Cliente atualizado com sucesso!");
                 }
@@ -64,6 +64,11 @@ namespace Efenex.view.clientes
             IndexClientes Index = new IndexClientes();
             this.Hide();
             Index.Show();
+        }
+
+        private void txtBoxDataNascimento_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
