@@ -42,5 +42,12 @@ namespace Efenex
         {
             this.Close();
         }
+
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+            IndexVendas Vendas = new IndexVendas();
+            Index.Show();
+            this.Hide();
+        }
     }
 }
