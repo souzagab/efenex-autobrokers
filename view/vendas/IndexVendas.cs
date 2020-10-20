@@ -21,5 +21,10 @@ namespace Efenex.view.vendas
             this.Hide();
             formVendas.Show();
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

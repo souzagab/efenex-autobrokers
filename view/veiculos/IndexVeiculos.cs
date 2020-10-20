@@ -23,6 +23,7 @@ namespace Efenex.view.veiculos
             FormVeiculos NovoVeiculoForm = new FormVeiculos();
             this.Hide();
             NovoVeiculoForm.Show();
+            ReloadResources();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -33,7 +34,7 @@ namespace Efenex.view.veiculos
             NovoVeiculoForm.Show();
         }
 
-        private void ReloadResources()
+        public void ReloadResources()
         {
             listVeiculos.DataSource = VeiculosController.Index;
             listVeiculos.DisplayMember = "Descricao";
@@ -52,6 +53,16 @@ namespace Efenex.view.veiculos
                 MessageBox.Show("Veiculo não pode ser deletado");
             }
             ReloadResources();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void listVeiculos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

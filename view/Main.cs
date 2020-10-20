@@ -29,14 +29,14 @@ namespace Efenex
         {
             IndexClientes Index = new IndexClientes();
             Index.Show();
-            this.Hide();
+        //    this.Hide();
         }
 
         private void BtnVeiculos_Click(object sender, EventArgs e)
         {
             IndexVeiculos Index = new IndexVeiculos();
             Index.Show();
-            this.Hide();
+         //   this.Hide();
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace Efenex
         {
             IndexVendas Vendas = new IndexVendas();
             Vendas.Show();
-            this.Hide();
+        //    this.Hide();
         }
     }
 }

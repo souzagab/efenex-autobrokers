@@ -68,7 +68,9 @@ namespace Efenex.view.vendas
             vendasController.Create(venda);
         }
 
-
-
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
