@@ -40,6 +40,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtMarca
@@ -142,11 +144,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(499, 33);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(106, 23);
+            this.txtValor.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(499, 15);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 15);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Valor";
+            // 
             // FormVeiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label5);
@@ -180,5 +200,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.Label label6;
     }
 }

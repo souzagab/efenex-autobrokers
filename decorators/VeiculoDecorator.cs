@@ -18,7 +18,7 @@ namespace Efenex.decorators
         {
             get
             {
-                return $"{this.veiculo.Ano.ToString()}  {this.veiculo.Marca} {this.veiculo.Modelo}";
+                return $"{this.veiculo.Ano.ToString()}  {this.veiculo.Marca} {this.veiculo.Modelo} {this.veiculo.Valor}";
             }
         }
 
