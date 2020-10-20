@@ -17,7 +17,7 @@ namespace Efenex.model.venda
 
         public bool Save()
         {
-            var response = Connection.Execute(@$"INSERT INTO {TableName()}(DataVenda,vendedor_id,veiculo_id,cliente_id) VALUES(@Data,@vendedor,@veiculo,@cliente)", this);
+            var response = Connection.Execute(@$"INSERT INTO {TableName()}(DataVenda,vendedor_id,veiculo_id,cliente_id) VALUES(@Data,@vendedor_id,@veiculo_id,@cliente_id)", this);
             if (response == 1)
             {
                 veiculo.MarcarComoVendido(this.veiculo_id);

@@ -1,5 +1,6 @@
 ﻿using Efenex.view;
 using Efenex.view.veiculos;
+using Efenex.view.vendas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,7 +47,7 @@ namespace Efenex
         private void btnVendas_Click(object sender, EventArgs e)
         {
             IndexVendas Vendas = new IndexVendas();
-            Index.Show();
+            Vendas.Show();
             this.Hide();
         }
     }
