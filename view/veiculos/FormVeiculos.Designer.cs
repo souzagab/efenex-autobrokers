@@ -39,6 +39,7 @@
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtMarca
@@ -131,11 +132,22 @@
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(707, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(81, 41);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // FormVeiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTipo);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button button1;
     }
 }

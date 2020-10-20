@@ -68,5 +68,10 @@ namespace Efenex.view.veiculos
             this.Hide();
             Index.Show();
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

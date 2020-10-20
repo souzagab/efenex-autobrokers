@@ -63,7 +63,8 @@ namespace Efenex.view.clientes
                 }
             }
             this.Hide();
-            Index.Show();
+            IndexClientes indexCliente = new IndexClientes();
+            indexCliente.Show();
         }
 
         private void txtBoxDataNascimento_ValueChanged(object sender, EventArgs e)
@@ -75,6 +76,11 @@ namespace Efenex.view.clientes
         {
             this.Hide();
             Index.Show();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

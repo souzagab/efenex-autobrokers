@@ -37,7 +37,7 @@
             this.txtBoxDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.labelDataNascimento = new System.Windows.Forms.Label();
             this.btnSaveCliente = new System.Windows.Forms.Button();
-            this.btnVoltar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtBoxNome
@@ -115,22 +115,22 @@
             this.btnSaveCliente.UseVisualStyleBackColor = true;
             this.btnSaveCliente.Click += new System.EventHandler(this.btnSaveCliente_Click);
             // 
-            // btnVoltar
+            // button1
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(75, 337);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
-            this.btnVoltar.TabIndex = 10;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.button1.Location = new System.Drawing.Point(45, 338);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(81, 41);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 450);
-            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSaveCliente);
             this.Controls.Add(this.labelDataNascimento);
             this.Controls.Add(this.txtBoxDataNascimento);
@@ -158,6 +158,6 @@
         private System.Windows.Forms.DateTimePicker txtBoxDataNascimento;
         private System.Windows.Forms.Label labelDataNascimento;
         private System.Windows.Forms.Button btnSaveCliente;
-        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button button1;
     }
 }
