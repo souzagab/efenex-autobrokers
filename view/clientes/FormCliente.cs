@@ -63,7 +63,6 @@ namespace Efenex.view.clientes
                 }
             }
             this.Hide();
-          //  Index.Show();
             IndexClientes indexCliente = new IndexClientes();
             indexCliente.Show();
         }
