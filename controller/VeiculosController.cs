@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Efenex.decorators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,13 +9,16 @@ namespace Efenex.controller
 {
     public class VeiculosController: BaseController
     {
-        public List<Veiculo> Index
+
+        public new List<VeiculoDecorator> Index
         {
             get
             {
-                IEnumerable<Veiculo> veiculos = Connection.Query<Veiculo>("SELECT * FROM veiculos");
-                return veiculos.ToList();
-
+                IEnumerable<Veiculo> listaVeiculos = Connection.Query<Veiculo>("SELECT * FROM veiculos WHERE Vendido='N'");
+                List <VeiculoDecorator> veiculos = new List<VeiculoDecorator>();
+                listaVeiculos.ToList().ForEach(veiculo => veiculos.Add(new VeiculoDecorator(veiculo)));
+                return veiculos;
+                
             }
         }
 

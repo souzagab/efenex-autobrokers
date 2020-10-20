@@ -36,8 +36,8 @@ namespace Efenex.view.veiculos
         private void ReloadResources()
         {
             listVeiculos.DataSource = VeiculosController.Index;
-            listVeiculos.DisplayMember = "Modelo";
-            listVeiculos.ValueMember = "Modelo";
+            listVeiculos.DisplayMember = "Descricao";
+            listVeiculos.ValueMember = "Descricao";
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
