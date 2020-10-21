@@ -10,15 +10,25 @@ namespace Efenex.controller
     public class VeiculosController: BaseController
     {
 
-        public new List<VeiculoDecorator> Index
+        public  List<Veiculo> Index
         {
             get
             {
                 IEnumerable<Veiculo> listaVeiculos = Connection.Query<Veiculo>("SELECT * FROM veiculos WHERE Vendido='N'");
-                List <VeiculoDecorator> veiculos = new List<VeiculoDecorator>();
+
+                return listaVeiculos.ToList();
+                
+            }
+        }
+
+        public List<VeiculoDecorator> DecoratedIndex
+        {
+            get
+            {
+                var listaVeiculos = Index;
+                List<VeiculoDecorator> veiculos = new List<VeiculoDecorator>();
                 listaVeiculos.ToList().ForEach(veiculo => veiculos.Add(new VeiculoDecorator(veiculo)));
                 return veiculos;
-                
             }
         }
 

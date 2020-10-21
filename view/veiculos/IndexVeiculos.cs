@@ -1,4 +1,5 @@
 ﻿using Efenex.controller;
+using Efenex.decorators;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,8 @@ namespace Efenex.view.veiculos
 {
     public partial class IndexVeiculos : Form
     {
-        VeiculosController VeiculosController = new VeiculosController();
+        VeiculosController veiculosController = new VeiculosController();
+ 
         public IndexVeiculos()
         {
             InitializeComponent();
@@ -28,7 +30,6 @@ namespace Efenex.view.veiculos
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Veiculo veiculo = (Veiculo)listVeiculos.SelectedItem;
             FormVeiculos NovoVeiculoForm = new FormVeiculos(veiculo);
             this.Hide();
             NovoVeiculoForm.Show();
@@ -36,7 +37,8 @@ namespace Efenex.view.veiculos
 
         public void ReloadResources()
         {
-            listVeiculos.DataSource = VeiculosController.Index;
+            
+            listVeiculos.DataSource = veiculosController.DecoratedIndex;
             listVeiculos.DisplayMember = "Descricao";
             listVeiculos.ValueMember = "Descricao";
         }
@@ -44,7 +46,7 @@ namespace Efenex.view.veiculos
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             Veiculo veiculo = (Veiculo)listVeiculos.SelectedItem;
-            if(VeiculosController.Delete(veiculo.Id))
+            if(veiculosController.Delete(veiculo.Id))
             {
                 MessageBox.Show("Veiculo excluido com sucesso");
             }
@@ -53,6 +55,15 @@ namespace Efenex.view.veiculos
                 MessageBox.Show("Veiculo não pode ser deletado");
             }
             ReloadResources();
+        }
+
+        Veiculo veiculo
+        {
+            get 
+            {
+                var item = (VeiculoDecorator)listVeiculos.SelectedItem;
+                return veiculosController.Index.Find(veiculo => veiculo.Id == item.Id);
+            }
         }
 
         private void btnSair_Click(object sender, EventArgs e)

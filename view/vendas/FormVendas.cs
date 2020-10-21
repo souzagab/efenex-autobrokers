@@ -51,7 +51,7 @@ namespace Efenex.view.vendas
 
         void FetchVeiculos()
         {
-            lboxVeiculos.DataSource = veiculosController.Index;
+            lboxVeiculos.DataSource = veiculosController.DecoratedIndex;
         }
 
 

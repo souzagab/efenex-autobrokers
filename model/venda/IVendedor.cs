@@ -7,7 +7,7 @@ namespace Efenex.model.venda
 {
     interface IVendedor
     {
-        public void RealizarVenda()
+        public static void RealizarVenda()
         {
             MessageBox.Show("Venda Realizada!");
         }
