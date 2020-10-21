@@ -24,6 +24,7 @@ namespace Efenex.view.veiculos
                 txtModelo.Text = veiculo.Modelo;
                 txtPlaca.Text = veiculo.Placa;
                 txtTipo.Text = veiculo.Tipo;
+                txtValor.Text = veiculo.Valor.ToString();
             }
         }
 
@@ -37,6 +38,7 @@ namespace Efenex.view.veiculos
                 veiculo.Modelo = txtModelo.Text;
                 veiculo.Placa = txtPlaca.Text;
                 veiculo.Tipo = txtTipo.Text;
+                veiculo.Valor = int.Parse(txtValor.Text);
 
                 if(veiculocontroller.Create(veiculo))
                 {
@@ -54,6 +56,7 @@ namespace Efenex.view.veiculos
                 veiculo.Modelo = txtModelo.Text;
                 veiculo.Placa = txtPlaca.Text;
                 veiculo.Tipo = txtTipo.Text;
+                veiculo.Valor = int.Parse(txtValor.Text);
 
                 if(veiculocontroller.Update(veiculo.Id,veiculo))
                 {

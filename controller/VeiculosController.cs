@@ -42,14 +42,14 @@ namespace Efenex.controller
 
         public bool Create(Veiculo parametros)
         {
-            Veiculo veiculo = new Veiculo { Marca = parametros.Marca, Ano = parametros.Ano, Modelo = parametros.Modelo, Placa = parametros.Placa, Tipo = parametros.Tipo};
+            Veiculo veiculo = new Veiculo { Marca = parametros.Marca, Ano = parametros.Ano, Modelo = parametros.Modelo, Placa = parametros.Placa, Tipo = parametros.Tipo, Valor = parametros.Valor};
             return veiculo.Save();
         }
     
        public bool Update(long id, Veiculo parametros)
         {
-            Veiculo veiculo = new Veiculo { Id = id, Marca = parametros.Marca, Ano = parametros.Ano, Modelo = parametros.Modelo, Placa = parametros.Placa, Tipo = parametros.Tipo };
-            var query = Connection.Execute("UPDATE veiculos SET Marca=@Marca, Ano=@Ano, Modelo=@Modelo, Placa=@Placa, Tipo=@Tipo WHERE Id=@Id", veiculo);
+            Veiculo veiculo = new Veiculo { Id = id, Marca = parametros.Marca, Ano = parametros.Ano, Modelo = parametros.Modelo, Placa = parametros.Placa, Tipo = parametros.Tipo, Valor = parametros.Valor };
+            var query = Connection.Execute("UPDATE veiculos SET Marca=@Marca, Ano=@Ano, Modelo=@Modelo, Placa=@Placa, Tipo=@Tipo, Valor=@Valor WHERE Id=@Id", veiculo);
             return query == 1;
         }
 

@@ -19,7 +19,7 @@ namespace Efenex
 
         public bool Save()
         {
-            var response = Connection.Execute(@$"INSERT INTO {TableName()}(Marca,Ano,Modelo,Placa,Tipo) VALUES(@Marca,@Ano,@Modelo,@Placa,@Tipo)", this);
+            var response = Connection.Execute(@$"INSERT INTO {TableName()}(Marca,Ano,Modelo,Placa,Tipo,Valor) VALUES(@Marca,@Ano,@Modelo,@Placa,@Tipo,@Valor)", this);
             return response == 1;
         }
     }
