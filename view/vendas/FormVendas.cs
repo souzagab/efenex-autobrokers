@@ -65,7 +65,14 @@ namespace Efenex.view.vendas
         private void btnVenda_Click(object sender, EventArgs e)
         {
             Venda venda = new Venda { cliente_id = cliente.Id, vendedor_id = vendedor.Id, veiculo_id=veiculo.Id };
-            vendasController.Create(venda);
+            if (vendasController.Create(venda))
+            {
+                this.Close();
+            } 
+            else
+            {
+                MessageBox.Show("A Venda não pode ser concluida");
+            }
         }
 
         private void btnSair_Click(object sender, EventArgs e)
