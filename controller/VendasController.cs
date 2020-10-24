@@ -17,6 +17,7 @@ namespace Efenex.controller
                 return vendas.ToList();
             }
         }
+
         public object Show(int id)
         {
             Venda venda = new Venda();

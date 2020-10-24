@@ -17,11 +17,19 @@ namespace Efenex.model.venda
 
         public bool Save()
         {
-            var response = Connection.Execute(@$"INSERT INTO {TableName()}(DataVenda,vendedor_id,veiculo_id,cliente_id) VALUES(@Data,@vendedor_id,@veiculo_id,@cliente_id)", this);
+            var response = Connection.Execute(@$"INSERT INTO {TableName()}(DataVenda,vendedor_id,veiculo_id,cliente_id) 
+                                                    VALUES(@Data,@VendedorId,@VeiculoId,@ClienteId)",
+                                                    new { 
+                                                          Data = this.DataVenda,
+                                                          VendedorId = this.veiculo_id,
+                                                          VeiculoId = this.vendedor_id,
+                                                          ClienteId = this.cliente_id
+                                                        });
             if (response == 1)
             {
-                veiculo.MarcarComoVendido(this.veiculo_id);
-                vendedor.RealizarVenda();
+
+                IVeiculo.MarcarComoVendido(this.veiculo_id);
+                IVendedor.RealizarVenda();
                 return true;
             }
             return false;
