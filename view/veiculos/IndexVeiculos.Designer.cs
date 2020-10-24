@@ -96,7 +96,7 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnNovo);
             this.Name = "IndexVeiculos";
-            this.Text = "IndexVeiculos";
+            this.Text = "Efenex-Veiculos";
             this.ResumeLayout(false);
 
         }

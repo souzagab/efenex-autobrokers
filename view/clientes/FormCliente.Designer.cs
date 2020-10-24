@@ -42,15 +42,15 @@
             // 
             // txtBoxNome
             // 
-            this.txtBoxNome.Location = new System.Drawing.Point(85, 91);
+            this.txtBoxNome.Location = new System.Drawing.Point(12, 38);
             this.txtBoxNome.Name = "txtBoxNome";
-            this.txtBoxNome.Size = new System.Drawing.Size(100, 23);
+            this.txtBoxNome.Size = new System.Drawing.Size(312, 23);
             this.txtBoxNome.TabIndex = 0;
             // 
             // labelNome
             // 
             this.labelNome.AutoSize = true;
-            this.labelNome.Location = new System.Drawing.Point(119, 73);
+            this.labelNome.Location = new System.Drawing.Point(12, 20);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(40, 15);
             this.labelNome.TabIndex = 1;
@@ -58,22 +58,22 @@
             // 
             // txtBoxCpf
             // 
-            this.txtBoxCpf.Location = new System.Drawing.Point(325, 90);
+            this.txtBoxCpf.Location = new System.Drawing.Point(12, 90);
             this.txtBoxCpf.Name = "txtBoxCpf";
-            this.txtBoxCpf.Size = new System.Drawing.Size(100, 23);
+            this.txtBoxCpf.Size = new System.Drawing.Size(312, 23);
             this.txtBoxCpf.TabIndex = 2;
             // 
             // txtBoxRg
             // 
-            this.txtBoxRg.Location = new System.Drawing.Point(593, 90);
+            this.txtBoxRg.Location = new System.Drawing.Point(12, 143);
             this.txtBoxRg.Name = "txtBoxRg";
-            this.txtBoxRg.Size = new System.Drawing.Size(100, 23);
+            this.txtBoxRg.Size = new System.Drawing.Size(312, 23);
             this.txtBoxRg.TabIndex = 3;
             // 
             // labelCpf
             // 
             this.labelCpf.AutoSize = true;
-            this.labelCpf.Location = new System.Drawing.Point(351, 64);
+            this.labelCpf.Location = new System.Drawing.Point(12, 72);
             this.labelCpf.Name = "labelCpf";
             this.labelCpf.Size = new System.Drawing.Size(28, 15);
             this.labelCpf.TabIndex = 4;
@@ -82,7 +82,7 @@
             // labelRg
             // 
             this.labelRg.AutoSize = true;
-            this.labelRg.Location = new System.Drawing.Point(618, 61);
+            this.labelRg.Location = new System.Drawing.Point(12, 125);
             this.labelRg.Name = "labelRg";
             this.labelRg.Size = new System.Drawing.Size(22, 15);
             this.labelRg.TabIndex = 5;
@@ -90,16 +90,16 @@
             // 
             // txtBoxDataNascimento
             // 
-            this.txtBoxDataNascimento.Location = new System.Drawing.Point(290, 213);
+            this.txtBoxDataNascimento.Location = new System.Drawing.Point(12, 195);
             this.txtBoxDataNascimento.Name = "txtBoxDataNascimento";
-            this.txtBoxDataNascimento.Size = new System.Drawing.Size(200, 23);
+            this.txtBoxDataNascimento.Size = new System.Drawing.Size(312, 23);
             this.txtBoxDataNascimento.TabIndex = 7;
             this.txtBoxDataNascimento.ValueChanged += new System.EventHandler(this.txtBoxDataNascimento_ValueChanged);
             // 
             // labelDataNascimento
             // 
             this.labelDataNascimento.AutoSize = true;
-            this.labelDataNascimento.Location = new System.Drawing.Point(325, 195);
+            this.labelDataNascimento.Location = new System.Drawing.Point(12, 177);
             this.labelDataNascimento.Name = "labelDataNascimento";
             this.labelDataNascimento.Size = new System.Drawing.Size(114, 15);
             this.labelDataNascimento.TabIndex = 8;
@@ -107,9 +107,9 @@
             // 
             // btnSaveCliente
             // 
-            this.btnSaveCliente.Location = new System.Drawing.Point(315, 338);
+            this.btnSaveCliente.Location = new System.Drawing.Point(90, 247);
             this.btnSaveCliente.Name = "btnSaveCliente";
-            this.btnSaveCliente.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveCliente.Size = new System.Drawing.Size(108, 49);
             this.btnSaveCliente.TabIndex = 9;
             this.btnSaveCliente.Text = "Salvar";
             this.btnSaveCliente.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(45, 338);
+            this.button1.Location = new System.Drawing.Point(12, 329);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 41);
             this.button1.TabIndex = 2;
@@ -129,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 450);
+            this.ClientSize = new System.Drawing.Size(337, 383);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSaveCliente);
             this.Controls.Add(this.labelDataNascimento);

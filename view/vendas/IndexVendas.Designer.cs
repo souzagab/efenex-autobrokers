@@ -34,9 +34,9 @@
             // 
             // btnNewVenda
             // 
-            this.btnNewVenda.Location = new System.Drawing.Point(142, 107);
+            this.btnNewVenda.Location = new System.Drawing.Point(12, 12);
             this.btnNewVenda.Name = "btnNewVenda";
-            this.btnNewVenda.Size = new System.Drawing.Size(102, 23);
+            this.btnNewVenda.Size = new System.Drawing.Size(166, 61);
             this.btnNewVenda.TabIndex = 0;
             this.btnNewVenda.Text = "Nova Venda";
             this.btnNewVenda.UseVisualStyleBackColor = true;
@@ -44,9 +44,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(22, 397);
+            this.button1.Location = new System.Drawing.Point(12, 95);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 41);
+            this.button1.Size = new System.Drawing.Size(76, 41);
             this.button1.TabIndex = 2;
             this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,11 +56,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(187, 147);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNewVenda);
             this.Name = "IndexVendas";
-            this.Text = "IndexVendas";
+            this.Text = "Vendas";
             this.ResumeLayout(false);
 
         }

@@ -79,5 +79,10 @@ namespace Efenex.view.vendas
         {
             this.Close();
         }
+
+        private void lboxVeiculos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            VlrCaption.Text = veiculo.Valor;
+        }
     }
 }

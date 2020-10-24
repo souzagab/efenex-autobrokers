@@ -36,6 +36,7 @@
             this.labelClientes = new System.Windows.Forms.Label();
             this.btnVenda = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.VlrCaption = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cboxVendedores
@@ -43,14 +44,14 @@
             this.cboxVendedores.FormattingEnabled = true;
             this.cboxVendedores.Location = new System.Drawing.Point(12, 47);
             this.cboxVendedores.Name = "cboxVendedores";
-            this.cboxVendedores.Size = new System.Drawing.Size(121, 23);
+            this.cboxVendedores.Size = new System.Drawing.Size(182, 23);
             this.cboxVendedores.TabIndex = 0;
             this.cboxVendedores.SelectedIndexChanged += new System.EventHandler(this.cboxVendedores_SelectedIndexChanged);
             // 
             // labelVendedores
             // 
             this.labelVendedores.AutoSize = true;
-            this.labelVendedores.Location = new System.Drawing.Point(30, 29);
+            this.labelVendedores.Location = new System.Drawing.Point(12, 29);
             this.labelVendedores.Name = "labelVendedores";
             this.labelVendedores.Size = new System.Drawing.Size(57, 15);
             this.labelVendedores.TabIndex = 1;
@@ -60,9 +61,9 @@
             // cboxClientes
             // 
             this.cboxClientes.FormattingEnabled = true;
-            this.cboxClientes.Location = new System.Drawing.Point(67, 138);
+            this.cboxClientes.Location = new System.Drawing.Point(214, 47);
             this.cboxClientes.Name = "cboxClientes";
-            this.cboxClientes.Size = new System.Drawing.Size(121, 23);
+            this.cboxClientes.Size = new System.Drawing.Size(181, 23);
             this.cboxClientes.TabIndex = 0;
             this.cboxClientes.SelectedIndexChanged += new System.EventHandler(this.cboxVendedores_SelectedIndexChanged);
             // 
@@ -77,15 +78,16 @@
             // 
             this.lboxVeiculos.FormattingEnabled = true;
             this.lboxVeiculos.ItemHeight = 15;
-            this.lboxVeiculos.Location = new System.Drawing.Point(376, 44);
+            this.lboxVeiculos.Location = new System.Drawing.Point(12, 89);
             this.lboxVeiculos.Name = "lboxVeiculos";
-            this.lboxVeiculos.Size = new System.Drawing.Size(385, 349);
+            this.lboxVeiculos.Size = new System.Drawing.Size(385, 319);
             this.lboxVeiculos.TabIndex = 2;
+            this.lboxVeiculos.SelectedIndexChanged += new System.EventHandler(this.lboxVeiculos_SelectedIndexChanged);
             // 
             // labelClientes
             // 
             this.labelClientes.AutoSize = true;
-            this.labelClientes.Location = new System.Drawing.Point(96, 120);
+            this.labelClientes.Location = new System.Drawing.Point(214, 29);
             this.labelClientes.Name = "labelClientes";
             this.labelClientes.Size = new System.Drawing.Size(44, 15);
             this.labelClientes.TabIndex = 1;
@@ -94,29 +96,40 @@
             // 
             // btnVenda
             // 
-            this.btnVenda.Location = new System.Drawing.Point(112, 337);
+            this.btnVenda.Location = new System.Drawing.Point(178, 431);
             this.btnVenda.Name = "btnVenda";
-            this.btnVenda.Size = new System.Drawing.Size(75, 23);
+            this.btnVenda.Size = new System.Drawing.Size(219, 39);
             this.btnVenda.TabIndex = 4;
-            this.btnVenda.Text = "Vender";
+            this.btnVenda.Text = "Confirmar venda";
             this.btnVenda.UseVisualStyleBackColor = true;
             this.btnVenda.Click += new System.EventHandler(this.btnVenda_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(30, 397);
+            this.button1.Location = new System.Drawing.Point(12, 516);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 41);
+            this.button1.Size = new System.Drawing.Size(75, 38);
             this.button1.TabIndex = 2;
             this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // VlrCaption
+            // 
+            this.VlrCaption.AutoSize = true;
+            this.VlrCaption.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.VlrCaption.Location = new System.Drawing.Point(12, 429);
+            this.VlrCaption.Name = "VlrCaption";
+            this.VlrCaption.Size = new System.Drawing.Size(67, 32);
+            this.VlrCaption.TabIndex = 5;
+            this.VlrCaption.Text = "Valor";
+            // 
             // FormVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(407, 566);
+            this.Controls.Add(this.VlrCaption);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVenda);
             this.Controls.Add(this.labelClientes);
@@ -126,7 +139,7 @@
             this.Controls.Add(this.labelVendedores);
             this.Controls.Add(this.cboxVendedores);
             this.Name = "FormVendas";
-            this.Text = "FormVendas";
+            this.Text = "Realizar Venda";
             this.Load += new System.EventHandler(this.FormVendas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -143,5 +156,6 @@
         private System.Windows.Forms.Label labelClientes;
         private System.Windows.Forms.Button btnVenda;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label VlrCaption;
     }
 }

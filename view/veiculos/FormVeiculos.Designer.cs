@@ -48,7 +48,7 @@
             // 
             this.txtMarca.Location = new System.Drawing.Point(12, 33);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(463, 23);
+            this.txtMarca.Size = new System.Drawing.Size(310, 23);
             this.txtMarca.TabIndex = 0;
             // 
             // label1
@@ -64,7 +64,7 @@
             // 
             this.txtAno.Location = new System.Drawing.Point(12, 84);
             this.txtAno.Name = "txtAno";
-            this.txtAno.Size = new System.Drawing.Size(463, 23);
+            this.txtAno.Size = new System.Drawing.Size(310, 23);
             this.txtAno.TabIndex = 0;
             // 
             // label2
@@ -80,7 +80,7 @@
             // 
             this.txtModelo.Location = new System.Drawing.Point(12, 152);
             this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(463, 23);
+            this.txtModelo.Size = new System.Drawing.Size(310, 23);
             this.txtModelo.TabIndex = 0;
             // 
             // label3
@@ -96,7 +96,7 @@
             // 
             this.txtPlaca.Location = new System.Drawing.Point(12, 206);
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(463, 23);
+            this.txtPlaca.Size = new System.Drawing.Size(310, 23);
             this.txtPlaca.TabIndex = 0;
             // 
             // label4
@@ -112,7 +112,7 @@
             // 
             this.txtTipo.Location = new System.Drawing.Point(12, 273);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(463, 23);
+            this.txtTipo.Size = new System.Drawing.Size(310, 23);
             this.txtTipo.TabIndex = 0;
             // 
             // label5
@@ -126,9 +126,9 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(12, 337);
+            this.btnSalvar.Location = new System.Drawing.Point(99, 380);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(776, 101);
+            this.btnSalvar.Size = new System.Drawing.Size(127, 54);
             this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -136,9 +136,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(707, 15);
+            this.button1.Location = new System.Drawing.Point(12, 468);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 41);
+            this.button1.Size = new System.Drawing.Size(76, 37);
             this.button1.TabIndex = 2;
             this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = true;
@@ -146,15 +146,15 @@
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(499, 33);
+            this.txtValor.Location = new System.Drawing.Point(12, 330);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(106, 23);
+            this.txtValor.Size = new System.Drawing.Size(310, 23);
             this.txtValor.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(499, 15);
+            this.label6.Location = new System.Drawing.Point(12, 312);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 15);
             this.label6.TabIndex = 1;
@@ -164,7 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(338, 521);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.button1);
@@ -180,7 +180,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMarca);
             this.Name = "FormVeiculos";
-            this.Text = "FormVeiculos";
+            this.Text = "Cadastro de veiculos";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -37,9 +37,9 @@
             // 
             // BtnNewCliente
             // 
-            this.BtnNewCliente.Location = new System.Drawing.Point(111, 201);
+            this.BtnNewCliente.Location = new System.Drawing.Point(12, 12);
             this.BtnNewCliente.Name = "BtnNewCliente";
-            this.BtnNewCliente.Size = new System.Drawing.Size(118, 23);
+            this.BtnNewCliente.Size = new System.Drawing.Size(265, 82);
             this.BtnNewCliente.TabIndex = 0;
             this.BtnNewCliente.Text = "Novo Cliente";
             this.BtnNewCliente.UseVisualStyleBackColor = true;
@@ -49,7 +49,7 @@
             // 
             this.listIndexClientes.FormattingEnabled = true;
             this.listIndexClientes.ItemHeight = 15;
-            this.listIndexClientes.Location = new System.Drawing.Point(328, 61);
+            this.listIndexClientes.Location = new System.Drawing.Point(295, 10);
             this.listIndexClientes.Name = "listIndexClientes";
             this.listIndexClientes.Size = new System.Drawing.Size(397, 289);
             this.listIndexClientes.TabIndex = 1;
@@ -57,9 +57,9 @@
             // 
             // btnEditCliente
             // 
-            this.btnEditCliente.Location = new System.Drawing.Point(111, 251);
+            this.btnEditCliente.Location = new System.Drawing.Point(12, 117);
             this.btnEditCliente.Name = "btnEditCliente";
-            this.btnEditCliente.Size = new System.Drawing.Size(118, 23);
+            this.btnEditCliente.Size = new System.Drawing.Size(265, 83);
             this.btnEditCliente.TabIndex = 2;
             this.btnEditCliente.Text = "Editar Cliente";
             this.btnEditCliente.UseVisualStyleBackColor = true;
@@ -67,9 +67,9 @@
             // 
             // btnDestroyCliente
             // 
-            this.btnDestroyCliente.Location = new System.Drawing.Point(111, 296);
+            this.btnDestroyCliente.Location = new System.Drawing.Point(12, 221);
             this.btnDestroyCliente.Name = "btnDestroyCliente";
-            this.btnDestroyCliente.Size = new System.Drawing.Size(118, 23);
+            this.btnDestroyCliente.Size = new System.Drawing.Size(265, 78);
             this.btnDestroyCliente.TabIndex = 3;
             this.btnDestroyCliente.Text = "Excluir Cliente";
             this.btnDestroyCliente.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(29, 426);
+            this.button1.Location = new System.Drawing.Point(12, 354);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 41);
             this.button1.TabIndex = 2;
@@ -89,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 501);
+            this.ClientSize = new System.Drawing.Size(699, 407);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDestroyCliente);
             this.Controls.Add(this.btnEditCliente);
